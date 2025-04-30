@@ -1,21 +1,19 @@
 # Arpenter à l'université
 
-Ces codes ont été imaginés comme support d'un cours organisé autour de la méthode de "l'arpentage" pour des groupes de travaux dirigés à l'université. Ils peuvent être employés dans de multiples contextes.
-Vous pouvez retrouver les contributions pédagogiques liées à ces codes aux adresses suivantes :
+Ces codes ont été imaginés pour créer une application exécutable en interne en support d'un cours. Ce cours mobilise "l'arpentage" comme méthode pédagogique pour familiariser des étudiants en première année de licence à la littéracie universitaire. Toutefois, l'application peut être employée dans de multiples situations. Je vous recommande de télécharger les fichiers si vous envisagez de vous servir de cette application pour vos propres cours et de l'exécuter en interne sur votre ordinateur. De cette façon, les identités de vos étudiants, contenu dans le fichier Excel *ad hoc*, resteront protégées.
 
-#Expliquer ce qu'est l'arpentage
+Un texte scientifique – en cours de rédaction – résume le contexte dans lequel cette application a été employée et les résultats de l'expérimentation de l'arpentage à l'université. Un lien sera mis à disposition pour accéder au texte dès que celui-ci sera publié.
 
-Ce dépôt contient deux fichiers de codes qui remplissent deux fonctions différentes et un fichiel Excel qui présente la structure que votre document – contenant les noms de vos étudiants·es – doit respecté pour exécuter les codes.
+## Qu'est-ce que contient ce dépôt Git ?
 
-## Votre fichier Excel
-Vous pouvez adapter le fichier Excel dans le dépôt comme bon vous semble (rajouter des colonnes "SEMAINE", ajouter des colonnes "NOTES", etc.), dès l'instant que le nom des colonnes respecte la structure actuelle du document.
+Ce dépôt contient trois fichiers de codes et un fichier Excel qui structurent l'application et ses fonctionnalités :
 
-Les noms visibles dans le fichier ont été générés de façon aléatoire à partir d'une base de noms et de prénoms.
+        · Le fichier *Welcoming_page.py* est le fichier qui doit être exécuté pour avoir accès à l'application.
 
-Vous avez la possibilité de référencer plusieurs feuilles dans le même classeur pour plusieurs classes. Actuellement, le fichier emploie une feuille nommée "G01".
+        · Le fichier *1_Random_reading_group.py*, contenu dans le fichier *pages*, est responsable de la première fonction de l'application. Son rôle est de constituer des groupes de lecture au hasard et de sélectionner un rapporteur ou une rapportrice parmis les étudiants dans le fichier Excel *Classeur_étudiants.xlsx*. L'application a pour contrainte de ne jamais sélectionner deux fois le même rapporteur et de ne jamais reproduire la distribution des groupes. Un fichier *group_history* est automatiquement mis à jour à chaque exécution pour enregistrer les distributions antérieures. L'historique des tirages au sort est consultable depuis l'application.
 
-## Constituer des groupes de lecture aléatoires
+        · Le fichier *2_Random_exam.py*, contenu dans le fichier *pages*, est responsable de la seconde fonction de l'application. L'objectif de cette fonction est de sélectionner, au hasard, un tiers des étudiants présents au cours de la *SEMAINE X* dans le fichier Excel *Classeur_étudiants.xlsx* ; pour permettre l'évaluation d'un travail de rédaction. Cette fonction produit un historique qui est enregistré de façon à ce qu'un étudiant ne puisse pas être sélectionné deux fois tant que tous les étudiants de son groupe n'ont pas été déjà sélectionnés au moins une fois. Il sera peut-être nécessaire de revoir cette fonction, car si elle est très utile durant les premières séances de travail, les étudiants dont les travaux ont déjà été évalués ont tendance à fournir un effort de travail moins important durant les séances d'arpentage.
 
-## Sélectionner de façon aléatoire des élèves pour une interrogation
+        · Le fichier Excel *Classeur_étudiants.xlsx* contient normalement l'identité des étudiants qui participent au cours. Le fichier contient actuellement une série d'identité générée de façon aléatoire pour illustrer le fonctionnement de l'application. Pour que vous puissiez employer cette application avec vos étudiants, il sera nécessaire de remplacer ces identités aléatoires par celles de vos étudiants. Vous avez la possibilité d'adapter le fichier Excel comme bon vous semble (rajouter des colonnes "SEMAINE", ajouter des colonnes "NOTES", etc.), dès l'instant que les noms des colonnes respectent la structure actuelle du document. Vous avez également la possibilité de référencer plusieurs feuilles dans le même classeur pour y faire figurer plusieurs groupes d'étudiants. Actuellement, le fichier emploie une feuille nommée "G01".
 
-#expliquer la structure nécessaire du fichier excel lié à l'utilisation de ces codes
+Je vous invite à vous saisir de cet outil et à l'améliorer pour qu'il puisse aider les enseignants-chercheurs et les enseignantes-chercheuses dans leurs activités d'enseignement.
