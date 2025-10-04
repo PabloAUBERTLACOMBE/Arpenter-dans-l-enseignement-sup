@@ -1,6 +1,6 @@
 # Arpenter à l'université
 
-Ces codes ont été imaginés pour créer une application en support d'un cours. Le cours en question mobilise "l'arpentage" comme méthode pédagogique pour familiariser des étudiants en première année de licence à la littéracie universitaire. Toutefois, l'application peut être employée dans de multiples situations. Je vous recommande de télécharger les fichiers si vous envisagez de vous servir de cette application pour vos propres cours et de l'exécuter en interne sur votre ordinateur. De cette façon, les identités de vos étudiants, contenues dans le fichier Excel ad hoc, resteront protégées.
+Ces codes ont été imaginés pour créer une application en support d'un cours. Le cours en question mobilise « l'arpentage » comme méthode pédagogique pour familiariser des étudiants en première année de licence à la littéracie universitaire. Toutefois, l'application peut être employée dans de multiples situations. Je vous recommande de télécharger les fichiers si vous envisagez de vous servir de cette application pour vos propres cours et de l'exécuter en interne sur votre ordinateur. De cette façon, les identités de vos étudiants, contenues dans le fichier Excel ad hoc, resteront protégées.
 
 Un texte scientifique – en cours de rédaction – résume le contexte dans lequel cette application a été employée et les résultats de l'expérimentation de l'arpentage à l'université. Un lien sera mis à disposition pour accéder au texte dès que celui-ci sera publié.
 ## Qu'est-ce que contient ce dépôt Git ?
