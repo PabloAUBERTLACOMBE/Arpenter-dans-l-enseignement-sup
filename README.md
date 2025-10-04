@@ -1,16 +1,4 @@
-# Arpenter à l'université
 
-Ces codes ont été imaginés pour créer une application en support d'un cours. Le cours en question mobilise "l'arpentage" comme méthode pédagogique pour familiariser des étudiants en première année de licence à la littéracie universitaire. Toutefois, l'application peut être employée dans de multiples situations. Je vous recommande de télécharger les fichiers si vous envisagez de vous servir de cette application pour vos propres cours et de l'exécuter en interne sur votre ordinateur. De cette façon, les identités de vos étudiants, contenu dans le fichier Excel *ad hoc*, resteront protégées.
-
-Un texte scientifique – en cours de rédaction – résume le contexte dans lequel cette application a été employée et les résultats de l'expérimentation de l'arpentage à l'université. Un lien sera mis à disposition pour accéder au texte dès que celui-ci sera publié.
-
-## Qu'est-ce que contient ce dépôt Git ?
-
-Ce dépôt contient trois fichiers de codes et un fichier Excel qui structurent l'application et ses fonctionnalités
-
-· Le fichier *Welcoming_page.py* est le fichier qui doit être exécuté pour avoir accès à l'application.
-
-· Le fichier *1_Random_reading_group.py*, contenu dans le fichier *pages*, est responsable de la première fonction de l'application. Son rôle est de constituer des groupes de lecture au hasard et de sélectionner un rapporteur ou une rapportrice parmis les étudiants dans le fichier Excel *Classeur_étudiants.xlsx*. L'application a pour contrainte de ne jamais sélectionner deux fois le même rapporteur et de ne jamais reproduire la distribution des groupes. Un fichier *group_history* est automatiquement mis à jour à chaque exécution pour enregistrer les distributions antérieures. L'historique des tirages au sort est consultable depuis l'application.
 
 · Le fichier *2_Random_exam.py*, contenu dans le fichier *pages*, est responsable de la seconde fonction de l'application. L'objectif de cette fonction est de sélectionner, au hasard, un tiers des étudiants présents au cours de la *SEMAINE X* dans le fichier Excel *Classeur_étudiants.xlsx* ; pour permettre l'évaluation d'un travail de rédaction. Cette fonction produit un historique qui est enregistré de façon à ce qu'un étudiant ne puisse pas être sélectionné deux fois tant que tous les étudiants de son groupe n'ont pas été déjà sélectionnés au moins une fois. Il sera peut-être nécessaire de revoir cette fonction, car si elle est très utile durant les premières séances de travail, les étudiants dont les travaux ont déjà été évalués ont tendance à fournir un effort de travail moins important durant les séances d'arpentage.
 
